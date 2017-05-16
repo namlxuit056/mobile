@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Danh sách mã số bài hát">
+        <menu>
+            <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_all_song"
+                android:title="Tất cả bài hát" android:icon="@drawable/ic_menu_list"
+                android:checked="true"/>
+            <item
+                android:id="@+id/nav_favorite_song"
+                android:title="Bài hát yêu thích" android:icon="@android:drawable/star_big_off"/>
+            </group>
+        </menu>
+    </item>
+    <item android:title="Cài đặt">
+        <menu>
+            <item android:title="Kết nối đầu đĩa" android:id="@+id/nav_connect_device"
+                android:icon="@drawable/ic_setting"/>
+            <item android:title="Sao lưu" android:id="@+id/nav_backup"
+                android:icon="@drawable/ic_backup"/>
+            <item android:title="Phục hồi" android:id="@+id/nav_restore"
+                android:icon="@drawable/ic_restore"/>
+        </menu>
+    </item>
+    <item android:title="Thông tin">
+        <menu>
+            <item
+                android:id="@+id/nav_app_info"
+                android:title="Sing Karaoke" android:icon="@android:drawable/ic_menu_info_details"/>
+            <item
+                android:id="@+id/nav_contact"
+                android:title="Liên hệ" android:icon="@android:drawable/sym_action_email"/>
+        </menu>
+    </item>
+</menu>

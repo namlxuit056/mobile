@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.opensourceassignment.singkaraoke.DetailSongActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_height="18dp"
+                android:layout_width="18dp"
+                android:src="@mipmap/ic_song"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/song_title"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Yêu lại từ đầu"
+                android:textColor="#05611a"
+                android:layout_marginLeft="8dp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+            <ToggleButton
+                android:id="@+id/mark_favorite_song"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/ic_mark_favorite_song"
+                android:textOn="@null"
+                android:textOff="@null"
+                android:text="@null"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@mipmap/ic_artist"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:text="Khắc việt"
+                android:id="@+id/song_artist"
+                android:textSize="18sp"
+                android:textColor="#f16022"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Arirang:"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#e92c29"/>
+            <TextView android:text="22222"
+                android:id="@+id/arirang_code"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:textColor="#e92c29"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="California:"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="#e92c29"/>
+            <TextView android:text="222222"
+                android:id="@+id/california_code"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:textColor="#e92c29"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lời bài hát:"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center_horizontal"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/song_lyric"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary"
+                android:text="Em ơi hình như chúng mình, đã hết yêu nhau mất rồi, tại vì sao em hãy nói đi, hay vì anh"
+                android:gravity="center_vertical|center_horizontal" />
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@android:drawable/ic_menu_send"
+            android:text="gửi mã qua đầu karaoke"
+            android:textColor="#f8faf9"
+            android:background="@color/colorPrimary"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@android:drawable/ic_menu_search"
+            android:text="tìm kiếm trên youtube"
+            android:textColor="#f8faf9"
+            android:background="@color/colorPrimary"
+            android:id="@+id/find_song_on_youtube_button"/>
+    </LinearLayout>
+</LinearLayout>
