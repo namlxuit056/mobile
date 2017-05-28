@@ -7,7 +7,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
+/**
+ * Created by namlxuit on 10/04/2017.
+ */
 public class RestoreActivity extends AppCompatActivity {
 
     @Override

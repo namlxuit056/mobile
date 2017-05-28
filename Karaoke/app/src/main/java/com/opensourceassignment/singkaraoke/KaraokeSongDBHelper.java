@@ -7,7 +7,6 @@ import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.database.sqlite.SQLiteStatement;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -16,7 +15,7 @@ import java.io.OutputStream;
 import java.util.ArrayList;
 
 /**
- * Created by Kernel Dang on 12/16/2015.
+ * Created by namlxuit on 10/04/2017.
  */
 public class KaraokeSongDBHelper extends SQLiteOpenHelper {
     private static final String DB_PATH = "/data/data/com.opensourceassignment.singkaraoke/databases/";

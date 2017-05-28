@@ -7,7 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="24sp"
-        android:text="Lập trình trên thiết bị di động"/>
+        android:text="Chuyên đề Mobile and Pervasive Computing"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,44 +18,85 @@
         android:layout_height="wrap_content"
         android:rowCount="3"
         android:columnCount="2">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hoàng Xuân Thiên"
-            android:textSize="18sp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="12520411"
-            android:textSize="18sp"
-            android:layout_row="0"
-            android:layout_column="1"
-            android:paddingLeft="24dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Lê Xuân Nam"
-            android:textSize="18sp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="12520272"
-            android:textSize="18sp"
-            android:layout_row="1"
-            android:layout_column="1"
-            android:paddingLeft="24dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Đặng Thành Nhân"
-            android:textSize="18sp"/>
-        <TextView
+
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="12520298"
-            android:textSize="18sp"
-            android:layout_row="2"
-            android:layout_column="1"
-            android:paddingLeft="24dp"/>
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lê Xuân Nam"
+                    android:textSize="18sp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:text="12520272"
+                    android:textSize="18sp"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:paddingLeft="24dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nguyễn Việt Hùng"
+                    android:textSize="18sp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:text="12520160"
+                    android:textSize="18sp"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:paddingLeft="24dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nguyễn Hoài Phú"
+                    android:textSize="18sp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:text="14520683"
+                    android:textSize="18sp"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:paddingLeft="24dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+        </LinearLayout>
+
     </GridLayout>
 </LinearLayout>

@@ -12,7 +12,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 /**
- * Created by Kernel Dang on 12/16/2015.
+ * Created by namlxuit on 10/04/2017.
  */
 public class SongAdapter extends ArrayAdapter<Song> {
     private static  ArrayList<Song> _allSongs = new ArrayList<>();

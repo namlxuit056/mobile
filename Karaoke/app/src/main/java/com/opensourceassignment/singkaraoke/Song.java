@@ -2,9 +2,6 @@ package com.opensourceassignment.singkaraoke;
 
 import java.io.Serializable;
 
-/**
- * Created by Kernel Dang on 12/16/2015.
- */
 public class Song implements Serializable {
     private int _songId;
     private String _title;
